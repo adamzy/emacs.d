@@ -21,7 +21,6 @@
    paredit
    rainbow-delimiters
    ;; misc
-   smartparens
    smex
    ;; modes
    clojure-mode

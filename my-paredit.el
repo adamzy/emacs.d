@@ -1,5 +1,5 @@
 (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
-(add-hook 'prog-mode-hook #'enable-paredit-mode)
+;;(add-hook 'prog-mode-hook #'enable-paredit-mode)
 
 
 ;; (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
@@ -37,4 +37,4 @@
 ;;  '(show-paren-match ((((class color) (background light)) (:background "azure2")))))
 
 
-(provide 'my-pairedit)
+(provide 'my-paredit)

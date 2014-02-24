@@ -26,7 +26,10 @@
 ;; (setq show-paren-style 'expression) 
 
 ;; turn on automatic bracket insertion by pairs. New in emacs 24
-;;(electric-indent-mode 1)
+(electric-pair-mode 1)
+
+;; auto indent
+(electric-indent-mode 1)
 
 ;; Disable backup with "~"
 (setq make-backup-files nil)

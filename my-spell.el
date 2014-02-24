@@ -1,4 +1,4 @@
-(add-hook 'prog-mode-hook 'flyspell-prog-mode)
+;;(add-hook 'prog-mode-hook 'flyspell-prog-mode)
 ;;(setq-default flyspell-mode t)
 ;;(flyspell-mode 1)
 (setq flyspell-issue-message-flag nil)

@@ -10,7 +10,7 @@
 ;; then plugins
 (require 'my-complete)
 (require 'my-auctex)
-(require 'my-pairedit)
+(require 'my-paredit)
 (require 'my-smex)
 (require 'my-spell)
 
