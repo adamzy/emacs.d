@@ -16,6 +16,8 @@
 (setq TeX-view-program-selection '((output-pdf "zathura")))
 (setq TeX-clean-confirm nil)
 
+;; solve the problem "Error occured after last TeX file closed"
+(setq LaTeX-command-style '(("" "%(PDF)%(latex) -file-line-error %S%(PDFout)")))
 ;;;; doesn't work
 ;; (add-hook 'LaTeX-mode-hook
 ;;           (lambda () (local-set-key (kbd "C-0") TeX-clean)))
