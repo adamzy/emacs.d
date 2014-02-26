@@ -1,12 +1,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Misc
-(require 'ibuffer)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
-
-(global-set-key (kbd "<f5>") 'speedbar)
-
-;; disable Ctrl+z
-(global-set-key (kbd "C-z") nil)
+;; (require 'ibuffer)
 
 (global-undo-tree-mode 1)
 

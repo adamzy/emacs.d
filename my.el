@@ -19,5 +19,7 @@
 (require 'my-lisp)
 (require 'my-go)
 
+;; finally, my keybinding
+(require 'my-keybind)
 ;; Done
 (provide 'my)
