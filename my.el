@@ -18,6 +18,7 @@
 (require 'my-org)
 (require 'my-lisp)
 (require 'my-go)
+(require 'my-coffee)
 
 ;; finally, my keybinding
 (require 'my-keybind)
