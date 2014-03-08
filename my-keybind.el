@@ -1,5 +1,5 @@
 ;; inspired by Xah Lee
-(global-set-key (kbd "<f8>") 'execute-extended-command)
+(global-set-key (kbd "<f8>") 'smex)
 (global-set-key (kbd "<f7>") 'query-replace)
 (global-set-key (kbd "<f6>") 'comment-or-uncomment-region-or-line)
 (global-set-key (kbd "<f5>") 'ibuffer)
