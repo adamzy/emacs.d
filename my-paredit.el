@@ -5,12 +5,15 @@
 ;; (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 (global-rainbow-delimiters-mode)
 
+;; using stronger colors
+;; taken from http://yoo2080.wordpress.com/2013/09/08/living-with-rainbow-delimiters-mode/ by Jisang Yoo
 (require 'cl-lib)
 (require 'color)
 (cl-loop
  for index from 1 to rainbow-delimiters-max-face-count
  do
- (let ((face (intern (format "rainbow-delimiters-depth-%d-face" index))))
+ (let
+     ((face (intern (format "rainbow-delimiters-depth-%d-face" index))))
    (cl-callf color-saturate-name (face-foreground face) 30)))
 
 ;;;; One can also manually edit colors
