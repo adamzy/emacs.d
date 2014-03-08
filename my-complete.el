@@ -2,7 +2,18 @@
 ;;(require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
-(global-auto-complete-mode t)
+
+;; doesn't work in some cases, e.g. in coffeescript mode
+;;(global-auto-complete-mode t)
+
+;; dirty fix for having AC everywhere
+(define-globalized-minor-mode real-global-auto-complete-mode
+  auto-complete-mode (lambda ()
+                       (if (not (minibufferp (current-buffer)))
+                         (auto-complete-mode 1))
+                       ))
+(real-global-auto-complete-mode t)
+
 
 ;; (require 'yasnippet)
 (add-to-list 'yas/root-directory "~/Dropbox/git/yasnippet-snippets")
