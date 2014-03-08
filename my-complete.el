@@ -14,6 +14,8 @@
                        ))
 (real-global-auto-complete-mode t)
 
+(ac-flyspell-workaround)
+
 
 ;; (require 'yasnippet)
 (add-to-list 'yas/root-directory "~/Dropbox/git/yasnippet-snippets")
