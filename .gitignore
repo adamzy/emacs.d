@@ -1,0 +1,7 @@
+*
+*/*
+!.gitignore
+!init.el
+!my*.el
+!my-others/
+!my-others/*
