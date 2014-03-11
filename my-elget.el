@@ -21,12 +21,13 @@
    paredit
    rainbow-delimiters
    ;; misc
+   undo-tree
    smex
    ;; modes
    clojure-mode
+   cider
    coffee-mode
    go-mode
-   cider
    ;; color themes
    color-theme-tomorrow
    color-theme-tangotango))
