@@ -18,6 +18,7 @@
 (require 'my-org)
 (require 'my-lisp)
 (require 'my-go)
+(require 'my-python)
 (require 'my-coffee)
 
 ;; finally, my keybinding

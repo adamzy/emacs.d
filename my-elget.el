@@ -28,6 +28,8 @@
    cider
    coffee-mode
    go-mode
+   markdown-mode
+   ruby-mode
    ;; color themes
    color-theme-tomorrow
    color-theme-tangotango))
