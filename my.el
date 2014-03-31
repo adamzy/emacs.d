@@ -11,7 +11,6 @@
 (require 'my-complete)
 (require 'my-auctex)
 (require 'my-paredit)
-(require 'my-smex)
 (require 'my-spell)
 
 ;; now modes

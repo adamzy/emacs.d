@@ -7,6 +7,8 @@
 ;; disable Ctrl+z
 (global-set-key (kbd "C-z") nil)
 
+(global-set-key (kbd "M-x") 'smex)
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; switch : and ;
