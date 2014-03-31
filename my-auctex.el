@@ -12,6 +12,11 @@
 (add-hook 'LaTeX-mode-hook 'turn-spell-checking-on)
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 
+;; set fold-mode and enable it for the whole buffer
+(add-hook 'LaTeX-mode-hook (lambda ()
+                             (TeX-fold-mode 1)
+                             (TeX-fold-buffer)))
+
 (setq TeX-view-program-list '(("zathura" "zathura %o")))
 (setq TeX-view-program-selection '((output-pdf "zathura")))
 (setq TeX-clean-confirm nil)
@@ -27,5 +32,7 @@
 ;;                   '("Make" "latexmk -outdir=/tmp %t" TeX-run-TeX nil t
 ;;                 :help "Make pdf output using latexmk.")
 ;;                   TeX-command-list)))
+
+
 
 (provide 'my-auctex)

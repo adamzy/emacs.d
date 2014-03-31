@@ -7,7 +7,12 @@
 ;; disable Ctrl+z
 (global-set-key (kbd "C-z") nil)
 
+(defalias 'yes-or-no-p 'y-or-n-p)
 
+;; switch : and ;
+;; (keyboard-translate ?\; ?\:)
+;; (keyboard-translate ?\: ?\;)
+                    
 ;; taken from http://stackoverflow.com/a/9697222 by da4c30ff
 (defun comment-or-uncomment-region-or-line ()
     "Comments or uncomments the region or the current line if there's no active region."
