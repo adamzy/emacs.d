@@ -24,12 +24,14 @@
    undo-tree
    smex
    ;; modes
+   auctex
    clojure-mode
    cider
    coffee-mode
    go-mode
    markdown-mode
    ruby-mode
+   lua-mode
    ;; color themes
    color-theme-tomorrow
    color-theme-tangotango))

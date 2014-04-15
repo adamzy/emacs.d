@@ -1,9 +1,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Basic setup 
 ;; (add-to-list 'default-frame-alist '(font . "Monaco-22"))
-(add-to-list 'default-frame-alist '(font . "Consolas-20"))
+(add-to-list 'default-frame-alist '(font . "Consolas-22"))
 (add-to-list 'default-frame-alist '(width . 80))
-(add-to-list 'default-frame-alist '(height . 32))
+(add-to-list 'default-frame-alist '(height . 30))
 ;(setq initial-frame-alist '((top . 0) (left . 0) (width . 80) (height . 20)))
 
 (setq byte-compile-warnings nil)
