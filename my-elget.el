@@ -15,6 +15,7 @@
  my-get-packages 
  '(el-get
    ;; complete
+   pos-tip
    auto-complete
    yasnippet
    ;; paredit

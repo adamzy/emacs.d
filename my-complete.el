@@ -22,6 +22,7 @@
 ;; I want it be case-sensitive, otherwise it is quite annoying
 (setq ac-ignore-case nil)
 
+(setq ac-dwim nil)
 
 ;; (require 'yasnippet)
 (add-to-list 'yas/root-directory "~/Dropbox/git/yasnippet-snippets")
