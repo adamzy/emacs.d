@@ -2,9 +2,9 @@
 ;; Basic setup 
 ;; (add-to-list 'default-frame-alist '(font . "Monaco-22"))
 (add-to-list 'default-frame-alist '(font . "Consolas-22"))
-(add-to-list 'default-frame-alist '(width . 80))
-(add-to-list 'default-frame-alist '(height . 30))
-;(setq initial-frame-alist '((top . 0) (left . 0) (width . 80) (height . 20)))
+;(add-to-list 'default-frame-alist '(width . 80))
+;(add-to-list 'default-frame-alist '(height . 30))
+(setq initial-frame-alist '((top . 0) (left . 0) (width . 80) (height . 30)))
 
 (setq byte-compile-warnings nil)
 (setq stack-trace-on-error nil)
@@ -51,7 +51,8 @@
 (prefer-coding-system 'utf-8)
 
 ;; intended
-(color-theme-tomorrow-night-eighties)
+;(color-theme-tomorrow-night-eighties)
+;(color-theme-desert)
 (color-theme-tangotango)
 
 (provide 'my-ui)

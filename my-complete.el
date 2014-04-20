@@ -10,11 +10,17 @@
 (define-globalized-minor-mode real-global-auto-complete-mode
   auto-complete-mode (lambda ()
                        (if (not (minibufferp (current-buffer)))
-                         (auto-complete-mode 1))
-                       ))
+                           (auto-complete-mode 1))))
+
+
 (real-global-auto-complete-mode t)
 
 (ac-flyspell-workaround)
+
+(add-to-list 'ac-user-dictionary-files (expand-file-name "./dict"))
+
+;; I want it be case-sensitive, otherwise it is quite annoying
+(setq ac-ignore-case nil)
 
 
 ;; (require 'yasnippet)
