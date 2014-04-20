@@ -1,5 +1,7 @@
 ;; el-get wiil automatically require them
 ;;(require 'auto-complete)
+(require 'pos-tip)
+
 (require 'auto-complete-config)
 (ac-config-default)
 
@@ -24,6 +26,9 @@
 (setq ac-dwim nil)
 
 (setq ac-delay 0.1)
+(setq ac-auto-show-menu 0.1)
+
+(define-key ac-completing-map "\e" 'ac-stop)
 ;; (require 'yasnippet)
 ;; (add-to-list 'yas/root-directory "~/Dropbox/git/yasnippet-snippets")
 ;; (yas-global-mode 1)
