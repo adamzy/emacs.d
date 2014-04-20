@@ -23,6 +23,7 @@
 
 (setq ac-dwim nil)
 
+(setq ac-delay 0.1)
 ;; (require 'yasnippet)
 ;; (add-to-list 'yas/root-directory "~/Dropbox/git/yasnippet-snippets")
 ;; (yas-global-mode 1)
