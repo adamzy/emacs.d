@@ -18,12 +18,15 @@
    pos-tip
    auto-complete
    yasnippet
+
    ;; paredit
    paredit
    rainbow-delimiters
+
    ;; misc
    undo-tree
    smex
+
    ;; modes
    auctex
    clojure-mode
@@ -33,6 +36,7 @@
    markdown-mode
    ruby-mode
    lua-mode
+
    ;; color themes
    color-theme-tomorrow
    color-theme-tangotango))

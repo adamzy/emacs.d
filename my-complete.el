@@ -12,7 +12,6 @@
                        (if (not (minibufferp (current-buffer)))
                            (auto-complete-mode 1))))
 
-
 (real-global-auto-complete-mode t)
 
 (ac-flyspell-workaround)
@@ -25,7 +24,7 @@
 (setq ac-dwim nil)
 
 ;; (require 'yasnippet)
-(add-to-list 'yas/root-directory "~/Dropbox/git/yasnippet-snippets")
-(yas-global-mode 1)
+;; (add-to-list 'yas/root-directory "~/Dropbox/git/yasnippet-snippets")
+;; (yas-global-mode 1)
 
 (provide 'my-complete)
