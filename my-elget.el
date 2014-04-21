@@ -10,6 +10,9 @@
 
 (el-get 'sync)
 
+
+(add-to-list 'el-get-recipe-path (expand-file-name "~/.emacs.d/my-others/recipes"))
+
 ;; the `required` packages.
 (setq
  my-get-packages 
@@ -40,6 +43,7 @@
    ;; color themes
    color-theme-tomorrow
    color-theme-tangotango))
+
 (el-get 'sync my-get-packages)
 
 (provide 'my-elget)
