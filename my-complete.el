@@ -29,16 +29,16 @@
  ac-disable-faces nil ;; auto-complete everywhere, even within quotes, comments
  ac-ignore-case nil ;; I wnat it be case-sensitive
  ac-use-quick-help nil ;; no pop-up help
- 
- )
+ ac-menu-height 10
+)
 
 (ac-set-trigger-key "TAB")
 
-;; (setq ac-expand-on-auto-complete nil)
+(setq ac-expand-on-auto-complete 't)
 
 (define-key ac-completing-map "\e" 'ac-stop)
 
-(setq popup-use-optimized-column-computation nil)
+;; (setq popup-use-optimized-column-computation nil)
 
 ;; (require 'yasnippet)
 ;; (add-to-list 'yas/root-directory "~/Dropbox/git/yasnippet-snippets")

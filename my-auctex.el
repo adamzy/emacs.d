@@ -24,17 +24,18 @@
 (setq TeX-clean-confirm nil)
 
 ;; solve the problem "Error occured after last TeX file closed"
-(setq LaTeX-command-style '(("" "%(PDF)%(latex) -file-line-error %S%(PDFout)")))
+; (setq LaTeX-command-style '(("" "%(PDF)%(latex) -file-line-error %S%(PDFout)")))
+
 ;;;; doesn't work
 ;; (add-hook 'LaTeX-mode-hook
 ;;           (lambda () (local-set-key (kbd "C-0") TeX-clean)))
 
-;; (add-hook 'LaTeX-mode-hook (lambda ()
-;;                  (push 
-;;                   '("Make" "latexmk -outdir=/tmp %t" TeX-run-TeX nil t
-;;                 :help "Make pdf output using latexmk.")
-;;                   TeX-command-list)))
-
-
+;; use latexmk to compile tex files
+(add-hook 'LaTeX-mode-hook (lambda ()
+  (push 
+    '("latexmk" "latexmk -pdf %(mode) %s" TeX-run-TeX nil t
+      :help "Run Latexmk on file")
+    TeX-command-list)))
+(add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
 
 (provide 'my-auctex)

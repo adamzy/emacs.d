@@ -39,6 +39,7 @@
    markdown-mode
    ruby-mode
    lua-mode
+   rust-mode
 
    ;; color themes
    color-theme-tomorrow
