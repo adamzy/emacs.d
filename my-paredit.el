@@ -2,8 +2,9 @@
 ;;(add-hook 'prog-mode-hook #'enable-paredit-mode)
 
 
-;; (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
-(global-rainbow-delimiters-mode)
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+;; (global-rainbow-delimiters-mode)
 
 ;; using stronger colors
 ;; taken from http://yoo2080.wordpress.com/2013/09/08/living-with-rainbow-delimiters-mode/ by Jisang Yoo
