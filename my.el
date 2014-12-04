@@ -20,6 +20,9 @@
 (require 'my-python)
 (require 'my-coffee)
 
+;; input methods
+(require 'my-im)
+
 ;; finally, my keybinding
 (require 'my-keybind)
 ;; Done
