@@ -1,6 +1,7 @@
-;; Preparation:
+;; eim-py and eim-wb are not el-getable.
+;; Setup:
 ;; 1) mkdir ~/.emacs.d/site-lisp/
-;; 2) git clone git clone https://github.com/wenbinye/emacs-eim/ ~/.emacs.d/site-lisp/eim
+;; 2) git clone https://github.com/wenbinye/emacs-eim/ ~/.emacs.d/site-lisp/eim
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp/eim")
 (autoload 'eim-use-package "eim" "Another emacs input method")
