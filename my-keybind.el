@@ -1,4 +1,4 @@
-;; inspired by Xah Lee
+012;; inspired by Xah Lee
 (global-set-key (kbd "<f9>") 'smex)
 (global-set-key (kbd "<f8>") 'smex-major-mode-commands)
 (global-set-key (kbd "<f7>") 'query-replace)
@@ -9,6 +9,8 @@
 (global-set-key (kbd "C-z") nil)
 
 (global-set-key (kbd "M-x") 'smex)
+
+(global-set-key (kbd "<f2>") 'ace-jump-mode)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 

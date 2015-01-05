@@ -40,6 +40,7 @@
    ruby-mode
    lua-mode
    rust-mode
+   ace-jump-mode   
 
    ;; color themes
    color-theme-tomorrow
